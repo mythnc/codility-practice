@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
+
 def solution(N, A):
     s = [0] * N
     max_ = base = 0
-    after_max_counter = False
     for n in A:
         if 1 <= n <= N:
             if s[n-1] < base:
